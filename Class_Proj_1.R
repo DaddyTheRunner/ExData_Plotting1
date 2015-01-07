@@ -1,8 +1,10 @@
 ##
 ## Class_Proj_1.R
 ##
-## This R script contains the code required to complete the first
-## class project in the Exploratory Data Analysis class
+## This R script contains the code required to read in and pre-process
+## the data used in the first class project in the Exploratory Data
+## Analysis class.  The pre-processed and sub-setted data is then
+## saved in a new file for later use by the plot*.R scripts
 ##
 library(dplyr)
 library(tidyr)
@@ -10,7 +12,7 @@ library(tidyr)
 ## Read all of the data and then subset it
 all.data <- read.table("./Data/household_power_consumption.txt",
                        sep=";", stringsAsFactors = FALSE,
-                       header = TRUE)
+                       header = TRUE, na.strings = "?")
 
 all.data <- tbl_df(all.data)
 all.data <- mutate(all.data, Date = as.Date(Date, format="%d/%m/%Y"))
@@ -35,11 +37,7 @@ subset.data <- subset.data %>%
          Sub_metering_2 = extract_numeric(Sub_metering_2))
 
 ## Save the subsetted data for reuse
-write.table(subset.data, "./Data/subset-data.csv", row.names=FALSE, col.names=TRUE,
+write.table(subset.data, "./Data/subset-data.csv",
+            row.names=FALSE, col.names=TRUE,
             sep=",")
-
-## Generate the plots
-hist(subset.data$Global_active_power, col="red",
-     xlab = "Global Active Power (kilowatts)",
-     main = "Global Active Power")
 
