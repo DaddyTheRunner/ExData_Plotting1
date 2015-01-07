@@ -1,3 +1,62 @@
+## Description of Submission
+
+This section describes the files I generated for this project
+and submitted as completion of the project assignment.
+
+### R Code Files
+
+The following is a list of R code files I generated for this
+project
+
+|File Name     |Description|
+|--------------|-----------|
+|Class_Proj_1.R|R script used to extract and process the subset of data used for this project.|
+|plot1.R       |R script that generates plot1.png|
+|plot2.R       |R script that generates plot2.png|
+|plot3.R       |R script that generates plot3.png|
+|plot4.R       |R script that generates plot4.png|
+
+
+### Data Files
+
+The following is a list of data files used in this project.  The
+data files are contained in the Data directory.
+
+|File Name                                   |Description|
+|--------------------------------------------|-----------|
+|exdata_data_household_power_consumption.zip |Original zipped dataset|
+|household_power_consumption.txt |Uncompressed full dataset|
+|subset-data.csv |Pre-processed data extract from the full dataset used by the plot*.R scripts
+
+**Note:**  The original zip file and uncompressed full data set
+were not uploaded to github to save space.
+
+
+### Graphics Files
+
+The following is a list of the graphics files that were generated
+for this project.  These files are all contained in the main
+project directory along with the corresponding R script file.
+
+|File Name |Description|
+|----------|-----------|
+|plot1.png |plot #1    |
+|plot2.png |plot #2    |
+|plot3.png |plot #3    |
+|plot4.png |plot #4    |
+
+Each of these png files is 480 x 480 pixels in size which is what
+was specified in the project directions (See below).  This differs
+from the sample PNG files which were posted in the original github
+repository.  Those PNGs are 504 x 504 pixels.  Both sets of PNGs
+contain the same plots and graphic elements.
+
+## Summary
+
+The remainder of this file is the original README file provided by
+the course instructor.
+
+
 ## Introduction
 
 This assignment uses data from
