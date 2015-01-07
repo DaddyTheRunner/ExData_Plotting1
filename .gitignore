@@ -17,4 +17,5 @@ vignettes/*.html
 vignettes/*.pdf
 
 # Data files
-Data/
+Data/*.txt
+Data/*.zip
